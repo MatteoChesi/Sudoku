@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head lang="it">
+		<meta charset="UTF8">
+		<meta name="author" content="Stefano Agresti">
+		<meta name="keywords" content="Sudoku, giochi">
+		<link rel="stylesheet" href="./video.css" type="text/css" media="screen">
+		<link rel="shortcut icon" href="./immagini/imgSudoku.png" />
+		<title>Sudoku</title>
+	</head>
+	<h1>Sudoku time!</h1>
+	<form id="sudoku" name="sudoku">
+	<table>
+		<colgroup span="3" style="border: 3px solid black"></colgroup><colgroup span="3" style="border: 3px solid black"></colgroup><colgroup span="3" style="border: 3px solid black"></colgroup>
+		<tr>
+			<td><input name="c00" type="text" size='1' required></td>
+			<td><input name="c01" type="text" size='1' required></td>
+			<td><input name="c02" type="text" size='1' required></td>
+			<td><input name="c03" type="text" size='1' required></td>
+			<td><input name="c04" type="text" size='1' required></td>
+			<td><input name="c05" type="text" size='1' required></td>
+			<td><input name="c06" type="text" size='1' required></td>
+			<td><input name="c07" type="text" size='1' required></td>
+			<td><input name="c08" type="text" size='1' required></td>
+		</tr>
+		<tr>
+			<td><input name="c10" type="text" size='1' required></td>
+			<td><input name="c11" type="text" size='1' required></td>
+			<td><input name="c12" type="text" size='1' required></td>
+			<td><input name="c13" type="text" size='1' required></td>
+			<td><input name="c14" type="text" size='1' required></td>
+			<td><input name="c15" type="text" size='1' required></td>
+			<td><input name="c16" type="text" size='1' required></td>
+			<td><input name="c17" type="text" size='1' required></td>
+			<td><input name="c18" type="text" size='1' required></td>
+		</tr>
+		<tr style="border-bottom: 3px solid black">
+			<td><input name="c20" type="text" size='1' required></td>
+			<td><input name="c21" type="text" size='1' required></td>
+			<td><input name="c22" type="text" size='1' required></td>
+			<td><input name="c23" type="text" size='1' required></td>
+			<td><input name="c24" type="text" size='1' required></td>
+			<td><input name="c25" type="text" size='1' required></td>
+			<td><input name="c26" type="text" size='1' required></td>
+			<td><input name="c27" type="text" size='1' required></td>
+			<td><input name="c28" type="text" size='1' required></td>
+		</tr>
+		<tr>
+			<td><input name="c30" type="text" size='1' required></td>
+			<td><input name="c31" type="text" size='1' required></td>
+			<td><input name="c32" type="text" size='1' required></td>
+			<td><input name="c33" type="text" size='1' required></td>
+			<td><input name="c34" type="text" size='1' required></td>
+			<td><input name="c35" type="text" size='1' required></td>
+			<td><input name="c36" type="text" size='1' required></td>
+			<td><input name="c37" type="text" size='1' required></td>
+			<td><input name="c38" type="text" size='1' required></td>
+		</tr>
+		<tr>
+			<td><input name="c40" type="text" size='1' required></td>
+			<td><input name="c41" type="text" size='1' required></td>
+			<td><input name="c42" type="text" size='1' required></td>
+			<td><input name="c43" type="text" size='1' required></td>
+			<td><input name="c44" type="text" size='1' required></td>
+			<td><input name="c45" type="text" size='1' required></td>
+			<td><input name="c46" type="text" size='1' required></td>
+			<td><input name="c47" type="text" size='1' required></td>
+			<td><input name="c48" type="text" size='1' required></td>
+		</tr>
+		<tr style="border-bottom: 3px solid black">
+			<td><input name="c50" type="text" size='1' required></td>
+			<td><input name="c51" type="text" size='1' required></td>
+			<td><input name="c52" type="text" size='1' required></td>
+			<td><input name="c53" type="text" size='1' required></td>
+			<td><input name="c54" type="text" size='1' required></td>
+			<td><input name="c55" type="text" size='1' required></td>
+			<td><input name="c56" type="text" size='1' required></td>
+			<td><input name="c57" type="text" size='1' required></td>
+			<td><input name="c58" type="text" size='1' required></td>
+		</tr>
+		<tr>
+			<td><input name="c60" type="text" size='1' required></td>
+			<td><input name="c61" type="text" size='1' required></td>
+			<td><input name="c62" type="text" size='1' required></td>
+			<td><input name="c63" type="text" size='1' required></td>
+			<td><input name="c64" type="text" size='1' required></td>
+			<td><input name="c65" type="text" size='1' required></td>
+			<td><input name="c66" type="text" size='1' required></td>
+			<td><input name="c67" type="text" size='1' required></td>
+			<td><input name="c68" type="text" size='1' required></td>
+		</tr>
+		<tr>
+			<td><input name="c70" type="text" size='1' required></td>
+			<td><input name="c71" type="text" size='1' required></td>
+			<td><input name="c72" type="text" size='1' required></td>
+			<td><input name="c73" type="text" size='1' required></td>
+			<td><input name="c74" type="text" size='1' required></td>
+			<td><input name="c75" type="text" size='1' required></td>
+			<td><input name="c76" type="text" size='1' required></td>
+			<td><input name="c77" type="text" size='1' required></td>
+			<td><input name="c78" type="text" size='1' required></td>
+		</tr>
+		<tr>
+			<td><input name="c80" type="text" size='1' required></td>
+			<td><input name="c81" type="text" size='1' required></td>
+			<td><input name="c82" type="text" size='1' required></td>
+			<td><input name="c83" type="text" size='1' required></td>
+			<td><input name="c84" type="text" size='1' required></td>
+			<td><input name="c85" type="text" size='1' required></td>
+			<td><input name="c86" type="text" size='1' required></td>
+			<td><input name="c87" type="text" size='1' required></td>
+			<td><input name="c88" type="text" size='1' required></td>
+		</tr>
+	</table>
+	</form>
+	<input name="buttonSolve" type="button" value="Risolvi" onClick="risolvi()">
+	<script type="text/javascript" src="./risolutore.js"></script>
+</html>

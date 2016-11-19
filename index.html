@@ -2,13 +2,14 @@
 <html>
 	<head lang="it">
 		<meta charset="UTF8">
-		<meta name="author" content="Stefano Agresti">
-		<meta name="keywords" content="Sudoku, giochi">
-		<link rel="stylesheet" href="./video.css" type="text/css" media="screen">
-		<link rel="shortcut icon" href="./immagini/imgSudoku.png" />
+		<link rel="stylesheet" href="./css/video.css" type="text/css" media="screen">
+		<link rel="shortcut icon" href="./css/immagini/imgSudoku.png" />
 		<title>Sudoku</title>
 	</head>
-	<h1>Sudoku time!</h1>
+	<header>
+		<h1>Sudoku time!</h1>
+	</header>
+	
 	<form id="sudoku" name="sudoku">
 	<table>
 		<colgroup span="3" style="border: 3px solid black"></colgroup><colgroup span="3" style="border: 3px solid black"></colgroup><colgroup span="3" style="border: 3px solid black"></colgroup>
@@ -113,6 +114,9 @@
 		</tr>
 	</table>
 	</form>
-	<input name="buttonSolve" type="button" value="Risolvi" onClick="risolvi()">
-	<script type="text/javascript" src="./risolutore.js"></script>
+	<aside>
+		<input name="buttonSolve" type="button" value="Risolvi" onClick="risolvi()">
+		<script type="text/javascript" src="./js/risolutore.js"></script>
+	</aside>
+	
 </html>

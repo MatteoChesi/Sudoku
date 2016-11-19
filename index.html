@@ -1,121 +1,137 @@
 <!DOCTYPE html>
 <html>
 	<head lang="it">
-		<meta charset="UTF8">
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./css/video.css" type="text/css" media="screen">
 		<link rel="shortcut icon" href="./css/immagini/imgSudoku.png" />
 		<title>Sudoku</title>
 	</head>
 	
 	<body>
+	<script type="text/javascript" src="./js/function.js"></script>
 		<header>
-			<h1>Sudoku time!</h1>
+			<br>
+			<h1>SUDOKU</h1>
+			<br>
+			<br>
 		</header>
 			
 		<form>			
 			<table align="center">
+				
 				<colgroup><col><col><col>
 				<colgroup><col><col><col>
 				<colgroup><col><col><col>
 				
 				<tbody>
 					<tr> 
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A2"></td>
-						<td><input type="text" name="A3"></td>
-						<td><input type="text" name="A4"></td>
-						<td><input type="text" name="A5"></td>
-						<td><input type="text" name="A6"></td>
-						<td><input type="text" name="A7"></td>
-						<td><input type="text" name="A8"></td>
-						<td><input type="text" name="A9"></td>
+						<td><input type="text" id="c11" name="CellaN" onkeyup="ControllaNumero('c11')"></td>
+						<td><input type="text" id="c12" name="CellaN" onkeyup="ControllaNumero('c12')"></td>
+						<td><input type="text" id="c13" name="CellaN" onkeyup="ControllaNumero('c13')"></td>
+						<td><input type="text" id="c14" name="CellaN" onkeyup="ControllaNumero('c14')"></td>
+						<td><input type="text" id="c15" name="CellaN" onkeyup="ControllaNumero('c15')"></td>
+						<td><input type="text" id="c16" name="CellaN" onkeyup="ControllaNumero('c16')"></td>
+						<td><input type="text" id="c17" name="CellaN" onkeyup="ControllaNumero('c17')"></td>
+						<td><input type="text" id="c18" name="CellaN" onkeyup="ControllaNumero('c18')"></td>
+						<td><input type="text" id="c19" name="CellaN" onkeyup="ControllaNumero('c19')"></td>
 					<tr> 
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
+						<td><input type="text" id="c21" name="CellaN" onkeyup="ControllaNumero('c21')"></td>
+						<td><input type="text" id="c22" name="CellaN" onkeyup="ControllaNumero('c22')"></td>
+						<td><input type="text" id="c23" name="CellaN" onkeyup="ControllaNumero('c23')"></td>
+						<td><input type="text" id="c24" name="CellaN" onkeyup="ControllaNumero('c24')"></td>
+						<td><input type="text" id="c25" name="CellaN" onkeyup="ControllaNumero('c25')"></td>
+						<td><input type="text" id="c26" name="CellaN" onkeyup="ControllaNumero('c26')"></td>
+						<td><input type="text" id="c27" name="CellaN" onkeyup="ControllaNumero('c27')"></td>
+						<td><input type="text" id="c28" name="CellaN" onkeyup="ControllaNumero('c28')"></td>
+						<td><input type="text" id="c29" name="CellaN" onkeyup="ControllaNumero('c29')"></td>
 					<tr> 
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
+						<td><input type="text" id="c31" name="CellaN" onkeyup="ControllaNumero('c31')"></td>
+						<td><input type="text" id="c32" name="CellaN" onkeyup="ControllaNumero('c32')"></td>
+						<td><input type="text" id="c33" name="CellaN" onkeyup="ControllaNumero('c33')"></td>
+						<td><input type="text" id="c34" name="CellaN" onkeyup="ControllaNumero('c34')"></td>
+						<td><input type="text" id="c35" name="CellaN" onkeyup="ControllaNumero('c35')"></td>
+						<td><input type="text" id="c36" name="CellaN" onkeyup="ControllaNumero('c36')"></td>
+						<td><input type="text" id="c37" name="CellaN" onkeyup="ControllaNumero('c37')"></td>
+						<td><input type="text" id="c38" name="CellaN" onkeyup="ControllaNumero('c38')"></td>
+						<td><input type="text" id="c39" name="CellaN" onkeyup="ControllaNumero('c39')"></td>
 				</tbody>
 				<tbody>
 					<tr> 
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
+						<td><input type="text" id="c41" name="CellaN" onkeyup="ControllaNumero('c41')"></td>
+						<td><input type="text" id="c42" name="CellaN" onkeyup="ControllaNumero('c42')"></td>
+						<td><input type="text" id="c43" name="CellaN" onkeyup="ControllaNumero('c43')"></td>
+						<td><input type="text" id="c44" name="CellaN" onkeyup="ControllaNumero('c44')"></td>
+						<td><input type="text" id="c45" name="CellaN" onkeyup="ControllaNumero('c45')"></td>
+						<td><input type="text" id="c46" name="CellaN" onkeyup="ControllaNumero('c46')"></td>
+						<td><input type="text" id="c47" name="CellaN" onkeyup="ControllaNumero('c47')"></td>
+						<td><input type="text" id="c48" name="CellaN" onkeyup="ControllaNumero('c48')"></td>
+						<td><input type="text" id="c49" name="CellaN" onkeyup="ControllaNumero('c49')"></td>
 					<tr> 
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
+						<td><input type="text" id="c51" name="CellaN" onkeyup="ControllaNumero('c51')"></td>
+						<td><input type="text" id="c52" name="CellaN" onkeyup="ControllaNumero('c52')"></td>
+						<td><input type="text" id="c53" name="CellaN" onkeyup="ControllaNumero('c53')"></td>
+						<td><input type="text" id="c54" name="CellaN" onkeyup="ControllaNumero('c54')"></td>
+						<td><input type="text" id="c55" name="CellaN" onkeyup="ControllaNumero('c55')"></td>
+						<td><input type="text" id="c56" name="CellaN" onkeyup="ControllaNumero('c56')"></td>
+						<td><input type="text" id="c57" name="CellaN" onkeyup="ControllaNumero('c57')"></td>
+						<td><input type="text" id="c58" name="CellaN" onkeyup="ControllaNumero('c58')"></td>
+						<td><input type="text" id="c59" name="CellaN" onkeyup="ControllaNumero('c59')"></td>
 					<tr> 
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
+						<td><input type="text" id="c61" name="CellaN" onkeyup="ControllaNumero('c61')"></td>
+						<td><input type="text" id="c62" name="CellaN" onkeyup="ControllaNumero('c62')"></td>
+						<td><input type="text" id="c63" name="CellaN" onkeyup="ControllaNumero('c63')"></td>
+						<td><input type="text" id="c64" name="CellaN" onkeyup="ControllaNumero('c64')"></td>
+						<td><input type="text" id="c65" name="CellaN" onkeyup="ControllaNumero('c65')"></td>
+						<td><input type="text" id="c66" name="CellaN" onkeyup="ControllaNumero('c66')"></td>
+						<td><input type="text" id="c67" name="CellaN" onkeyup="ControllaNumero('c67')"></td>
+						<td><input type="text" id="c68" name="CellaN" onkeyup="ControllaNumero('c68')"></td>
+						<td><input type="text" id="c69" name="CellaN" onkeyup="ControllaNumero('c69')"></td>
 				</tbody>
 				<tbody>
 					<tr> 
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
+						<td><input type="text" id="c71" name="CellaN" onkeyup="ControllaNumero('c71')"></td>
+						<td><input type="text" id="c72" name="CellaN" onkeyup="ControllaNumero('c72')"></td>
+						<td><input type="text" id="c73" name="CellaN" onkeyup="ControllaNumero('c73')"></td>
+						<td><input type="text" id="c74" name="CellaN" onkeyup="ControllaNumero('c74')"></td>
+						<td><input type="text" id="c75" name="CellaN" onkeyup="ControllaNumero('c75')"></td>
+						<td><input type="text" id="c76" name="CellaN" onkeyup="ControllaNumero('c76')"></td>
+						<td><input type="text" id="c77" name="CellaN" onkeyup="ControllaNumero('c77')"></td>
+						<td><input type="text" id="c78" name="CellaN" onkeyup="ControllaNumero('c78')"></td>
+						<td><input type="text" id="c79" name="CellaN" onkeyup="ControllaNumero('c79')"></td>
 					<tr> 
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
+						<td><input type="text" id="c81" name="CellaN" onkeyup="ControllaNumero('c81')"></td>
+						<td><input type="text" id="c82" name="CellaN" onkeyup="ControllaNumero('c82')"></td>
+						<td><input type="text" id="c83" name="CellaN" onkeyup="ControllaNumero('c83')"></td>
+						<td><input type="text" id="c84" name="CellaN" onkeyup="ControllaNumero('c84')"></td>
+						<td><input type="text" id="c85" name="CellaN" onkeyup="ControllaNumero('c85')"></td>
+						<td><input type="text" id="c86" name="CellaN" onkeyup="ControllaNumero('c86')"></td>
+						<td><input type="text" id="c87" name="CellaN" onkeyup="ControllaNumero('c87')"></td>
+						<td><input type="text" id="c88" name="CellaN" onkeyup="ControllaNumero('c88')"></td>
+						<td><input type="text" id="c89" name="CellaN" onkeyup="ControllaNumero('c89')"></td>
 					<tr> 
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
-						<td><input type="text" name="A1"></td>
+						<td><input type="text" id="c91" name="CellaN" onkeyup="ControllaNumero('c91')"></td>
+						<td><input type="text" id="c92" name="CellaN" onkeyup="ControllaNumero('c92')"></td>
+						<td><input type="text" id="c93" name="CellaN" onkeyup="ControllaNumero('c93')"></td>
+						<td><input type="text" id="c94" name="CellaN" onkeyup="ControllaNumero('c94')"></td>
+						<td><input type="text" id="c95" name="CellaN" onkeyup="ControllaNumero('c95')"></td>
+						<td><input type="text" id="c96" name="CellaN" onkeyup="ControllaNumero('c96')"></td>
+						<td><input type="text" id="c97" name="CellaN" onkeyup="ControllaNumero('c97')"></td>
+						<td><input type="text" id="c98" name="CellaN" onkeyup="ControllaNumero('c98')"></td>
+						<td><input type="text" id="c99" name="CellaN" onkeyup="ControllaNumero('c99')"></td>
+				
 				</tbody>	
+			
 			</table>
+
+
 		</form>
+
+		<aside id="Funzioni">
+			<input id="buttonSolve" type="button" value="Risolvi" onClick="risolvi()">
+			<input id="buttonGener" type="button" value="Genera" onClick="genera()">
+		</aside>
 
 	</body>
 		

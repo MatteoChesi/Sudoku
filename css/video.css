@@ -1,3 +1,7 @@
+body {
+    background-color: orange ;
+}
+
 h1{
 	text-align: center;
 }
@@ -15,8 +19,8 @@ colgroup, tbody {
 
 td { 
 	border: 1px solid black; 
-	height: 2.5em; 
-	width: 2.5em; 
+	height: 3em; 
+	width: 3em; 
 	text-align: center; 
 	padding: 0; 
 }
@@ -33,4 +37,18 @@ input[type="text"]{
 #Funzioni{
 	text-align: center;
 	margin: 1em;
+}
+
+
+@media screen and (max-width: 1000px) {
+  	td {
+  		height: 2.5em; 
+		width: 2.5em; 
+	}
+
+	body {
+    background-color: yellow ;
+  	}
+
+
 }

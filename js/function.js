@@ -12,7 +12,10 @@ function ControllaNumero(id) {
 }
 
 
-
+function genera() {
+	var x = Math.floor(Math.random() * 9) + 1;
+	alert(x);
+}
 
 
 

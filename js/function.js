@@ -52,7 +52,7 @@ function generaMod() {
 }
 
 function Test() {
-	alert(Math.floor(7/3));
+	alert(((Math.floor(3/3) + 1)* 3)-2);
 }
 
 function genera(){
@@ -60,10 +60,24 @@ function genera(){
 }
 
 
-var sudoku;  //server per caricare i dati  "-1" caselle vuote da riempire
+
 
 function risolvi() {
-	carica_dati();
+	var sudoku = carica_dati();  //server per caricare i dati  "-1" caselle vuote da riempire
+
+	var x = 1;
+
+	for (var i = 1; i < 10; i++) {
+		for (var j = 1; j < 10; j++) {
+			if(sudoku[i][j] == -1){
+				if(controlla_numero(i,j,x)){
+					sudoku[i][j] = x;
+				}
+			}
+		}
+	}
+
+	stampa_dati(sudoku);
 
 }
 
@@ -86,6 +100,8 @@ function carica_dati() {
 		}
 	}
 
+	return sudoku;
+
 }
 
 function controlla_numero(riga,colonna,numero) {
@@ -103,9 +119,57 @@ function controlla_numero(riga,colonna,numero) {
 	}
 
 
-	for (var i = Math.floor(riga/3) * 3; i < ; i++) { //NO
+	for (var i = ((Math.floor(riga/3) + 1)* 3)-1; i%3 < 0  ; i++) { //NO
 		Things[i]
 	}
 
+	var _i ;
+	var _j ;
+
+	if (riga < 4) {
+		_i = 1;
+	}
+	else{
+		if (riga < 7) {
+			_i = 4;
+		}
+		else{
+			_i = 7;
+		}
+	}
+
+	if (colonna < 4) {
+		_j = 1;
+	}
+	else{
+		if (colonna < 7) {
+			_j = 4;
+		}
+		else{
+			_j = 7;
+		}
+	}
+	 // ou encore : _i = 3*(i/3), _j = 3*(j/3);
+    for (i=_i; i < _i+3; i++){
+        for (j=_j; j < _j+3; j++){
+            if (sudoku[i][j] == numero){
+                return false;
+            }
+        }
+    }
+
+    return true;
 }
 
+function stampa_dati(sudoku) {
+	
+	for (var i = 1; i < 10; i++) {
+		for (var j = 1; j < 10; j++) {
+			id = "c" + i + j;
+			if (sudoku[i][j] == -1) {
+				continue;
+			}
+			document.getElementById(id).value = sudoku[i][j];
+		}
+	}
+}
